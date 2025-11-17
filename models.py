@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geometry
-from app.db import Base
+from db import Base
 
 class Species(Base):
     __tablename__ = "species"

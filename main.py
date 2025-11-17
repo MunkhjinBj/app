@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
-from app.db import SessionLocal
-from app.models import SeasonalRange
+from db import SessionLocal
+from models import SeasonalRange
 from geoalchemy2.shape import to_shape
 from shapely.geometry import mapping
 
